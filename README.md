@@ -1,15 +1,21 @@
-# UTN---TPI
-Gestión de Datos de Países en Python: filtros, ordenamientos y estadísticas.
+Nombre del Proyecto: Gestión de Datos de Países. 
 
+Integrantes: Brenda Bredeston y María Belén Marchi.
 
-Objetivo
-Desarrollar una aplicación en Python que permita gestionar
-información sobre países,
-aplicando listas, diccionarios, funciones, estructuras condicionales y
-repetitivas,
-ordenamientos y estadísticas.
-El sistema debe ser capaz de leer datos desde un archivo CSV,
-realizar consultas y generar indicadores clave a partir del dataset.
-El objetivo principal es afianzar el uso de estructuras de datos,
-modularización con funciones y técnicas de filtrado/ordenamiento,
-aplicando los conceptos aprendidos en Programación 1.
+Archivo base: paises.csv
+
+🔧 Instrucciones
+Buscar en la base de datos de países del archivo: paises.csv
+
+Ejecutar el script en Python (python gestion_paises.py).
+
+Navegar por el menú para realizar búsquedas, filtros, ordenamientos y ver estadísticas.
+
+📌 Ejemplos de uso
+Buscar "Argentina" → muestra todos sus datos.
+
+Filtrar por "Asia" → lista todos los países asiáticos.
+
+Ordenar por población → muestra los países más poblados.
+
+Ver estadísticas → muestra totales y promedios.
