@@ -1,6 +1,6 @@
 Nombre del Proyecto: Gestión de Datos de Países. 
 
-Integrantes: Brenda Bredeston y María Belén Marchi.
+Integrantes: Brenda Florencia Romero y María Belén Marchi.
 
 Archivo base: paises.csv
 
