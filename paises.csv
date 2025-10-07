@@ -1,51 +1,51 @@
-nombre,poblacion,superficie,continente,idioma_principal,moneda,capital
-China,1444216107,9596961,Asia,Mandarín,Yuan,Pekín
-India,1393409038,3287263,Asia,Hindi,Rupia,Nueva Delhi
-Estados Unidos,332915073,9833520,América,Inglés,Dólar,Washington D. C.
-Indonesia,276361788,1904569,Asia,Indonesio,Rupia indonesia,Yakarta
-Pakistán,225199929,881913,Asia,Urdu,Rupia pakistaní,Islamabad
-Nigeria,211400708,923768,África,Inglés,Naira,Abuya
-Brasil,213993437,8515767,América,Portugués,Real brasileño,Brasilia
-Bangladés,166303498,148460,Asia,Bengalí,Taka,Daca
-Rusia,145912025,17098246,Europa,Ruso,Rublo,Moscú
-Japón,125800000,377975,Asia,Japonés,Yen,Tokio
-México,126014024,1964375,América,Español,Peso mexicano,Ciudad de México
-Filipinas,111046903,300000,Asia,Filipino,Peso filipino,Manila
-Etiopía,117876227,1104300,África,Amárico,Birr,Adís Abeba
-Egipto,104258327,1010408,África,Árabe,Libra egipcia,El Cairo
-Vietnam,97468029,331212,Asia,Vietnamita,Dong,Hanói
-República Democrática del Congo,92377955,2344858,África,Francés,Franco congoleño,Kinsasa
-Turquía,85042738,783562,Asia,Turco,Lira turca,Ankara
-Irán,85028759,1648195,Asia,Persa,Rial,Teherán
-Alemania,83149300,357022,Europa,Alemán,Euro,Berlín
-Tailandia,69950850,513120,Asia,Tailandés,Baht,Bangkok
-Francia,65273511,643801,Europa,Francés,Euro,París
-Reino Unido,67215301,243610,Europa,Inglés,Libra esterlina,Londres
-Italia,59097931,301340,Europa,Italiano,Euro,Roma
-Tanzania,61141755,947303,África,Suajili,Chelín tanzano,Dodoma
-Sudáfrica,60041994,1221037,África,Afrikáans,Rand,Pretoria
-Birmania,54409800,676578,Asia,Birmano,Kyat,Naipyidó
-Kenia,54985698,580367,África,Suajili,Chelín keniano,Nairobi
-Corea del Sur,51717388,100210,Asia,Coreano,Won,Seúl
-Colombia,51269106,1141748,América,Español,Peso colombiano,Bogotá
-España,47450795,505990,Europa,Español,Euro,Madrid
-Argentina,45376763,2780400,América,Español,Peso argentino,Buenos Aires
-Uganda,47123547,241038,África,Inglés,Chelín ugandés,Kampala
-Ucrania,43791242,603500,Europa,Ucraniano,Grivna,Kiev
-Argelia,44616624,2381741,África,Árabe,Dinar argelino,Argel
-Sudán,44909353,1886068,África,Árabe,Libra sudanesa,Jartum
-Irak,41190700,438317,Asia,Árabe,Dinar iraquí,Bagdad
-Canadá,38067903,9984670,América,Inglés,Dólar canadiense,Ottawa
-Polonia,37846611,312696,Europa,Polaco,Złoty,Varsovia
-Afganistán,39835428,652230,Asia,Pastún,Afgani,Kabul
-Marruecos,37344933,710850,África,Árabe,Dírham marroquí,Rabat
-Perú,33359411,1285216,América,Español,Sol,Lima
-Arabia Saudita,35340683,2149690,Asia,Árabe,Riyal,Riad
-Venezuela,28190000,916445,América,Español,Bolívar,Caracas
-Malasia,32776194,329847,Asia,Malayo,Ringgit,Kuala Lumpur
-Uzbekistán,33935763,447400,Asia,Uzbeko,Som,Taskent
-Ghana,31732129,238533,África,Inglés,Cedi,Acra
-Yemen,30491000,527968,Asia,Árabe,Rial yemení,Saná
-Nepal,29674920,147181,Asia,Nepalí,Rupia nepalí,Katmandú
-Madagascar,28427328,587041,África,Malgache,Ariary,Antananarivo
-Australia,25788217,7692024,Oceanía,Inglés,Dólar australiano,Canberra
+nombre,poblacion,superficie,continente,idioma_principal,moneda,capital,clima
+China,1444216107,9596961,Asia,Mandarín,Yuan,Pekín,Templado
+India,1393409038,3287263,Asia,Hindi,Rupia,Nueva Delhi,Tropical
+Estados Unidos,332915073,9833520,América,Inglés,Dólar,Washington D. C.,Templado
+Indonesia,276361788,1904569,Asia,Indonesio,Rupia indonesia,Yakarta,Tropical
+Pakistán,225199929,881913,Asia,Urdu,Rupia pakistaní,Islamabad,Árido
+Nigeria,211400708,923768,África,Inglés,Naira,Abuya,Tropical
+Brasil,213993437,8515767,América,Portugués,Real brasileño,Brasilia,Tropical
+Bangladés,166303498,148460,Asia,Bengalí,Taka,Daca,Tropical
+Rusia,145912025,17098246,Europa,Ruso,Rublo,Moscú,Frío
+Japón,125800000,377975,Asia,Japonés,Yen,Tokio,Templado
+México,126014024,1964375,América,Español,Peso mexicano,Ciudad de México,Templado
+Filipinas,111046903,300000,Asia,Filipino,Peso filipino,Manila,Tropical
+Etiopía,117876227,1104300,África,Amárico,Birr,Adís Abeba,Templado
+Egipto,104258327,1010408,África,Árabe,Libra egipcia,El Cairo,Árido
+Vietnam,97468029,331212,Asia,Vietnamita,Dong,Hanói,Tropical
+República Democrática del Congo,92377955,2344858,África,Francés,Franco congoleño,Kinsasa,Tropical
+Turquía,85042738,783562,Asia,Turco,Lira turca,Ankara,Templado
+Irán,85028759,1648195,Asia,Persa,Rial,Teherán,Árido
+Alemania,83149300,357022,Europa,Alemán,Euro,Berlín,Templado
+Tailandia,69950850,513120,Asia,Tailandés,Baht,Bangkok,Tropical
+Francia,65273511,643801,Europa,Francés,Euro,París,Templado
+Reino Unido,67215301,243610,Europa,Inglés,Libra esterlina,Londres,Templado
+Italia,59097931,301340,Europa,Italiano,Euro,Roma,Templado
+Tanzania,61141755,947303,África,Suajili,Chelín tanzano,Dodoma,Tropical
+Sudáfrica,60041994,1221037,África,Afrikáans,Rand,Pretoria,Templado
+Birmania,54409800,676578,Asia,Birmano,Kyat,Naipyidó,Tropical
+Kenia,54985698,580367,África,Suajili,Chelín keniano,Nairobi,Tropical
+Corea del Sur,51717388,100210,Asia,Coreano,Won,Seúl,Templado
+Colombia,51269106,1141748,América,Español,Peso colombiano,Bogotá,Tropical
+España,47450795,505990,Europa,Español,Euro,Madrid,Templado
+Argentina,45376763,2780400,América,Español,Peso argentino,Buenos Aires,Templado
+Uganda,47123547,241038,África,Inglés,Chelín ugandés,Kampala,Tropical
+Ucrania,43791242,603500,Europa,Ucraniano,Grivna,Kiev,Frío
+Argelia,44616624,2381741,África,Árabe,Dinar argelino,Argel,Árido
+Sudán,44909353,1886068,África,Árabe,Libra sudanesa,Jartum,Árido
+Irak,41190700,438317,Asia,Árabe,Dinar iraquí,Bagdad,Árido
+Canadá,38067903,9984670,América,Inglés,Dólar canadiense,Ottawa,Frío
+Polonia,37846611,312696,Europa,Polaco,Złoty,Varsovia,Frío
+Afganistán,39835428,652230,Asia,Pastún,Afgani,Kabul,Árido
+Marruecos,37344933,710850,África,Árabe,Dírham marroquí,Rabat,Árido
+Perú,33359411,1285216,América,Español,Sol,Lima,Templado
+Arabia Saudita,35340683,2149690,Asia,Árabe,Riyal,Riad,Árido
+Venezuela,28190000,916445,América,Español,Bolívar,Caracas,Tropical
+Malasia,32776194,329847,Asia,Malayo,Ringgit,Kuala Lumpur,Tropical
+Uzbekistán,33935763,447400,Asia,Uzbeko,Som,Taskent,Árido
+Ghana,31732129,238533,África,Inglés,Cedi,Acra,Tropical
+Yemen,30491000,527968,Asia,Árabe,Rial yemení,Saná,Árido
+Nepal,29674920,147181,Asia,Nepalí,Rupia nepalí,Katmandú,Templado
+Madagascar,28427328,587041,África,Malgache,Ariary,Antananarivo,Tropical
+Australia,25788217,7692024,Oceanía,Inglés,Dólar australiano,Canberra,Seco

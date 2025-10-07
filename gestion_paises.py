@@ -15,7 +15,10 @@ def cargar_paises(nombre_archivo):
                         'continente': fila['continente'],
                         'idioma_principal': fila['idioma_principal'],
                         'moneda': fila['moneda'],
-                        'capital': fila['capital']
+                        'capital': fila['capital'],
+                        'clima': fila['clima']
+
+
                     }
                     paises.append(pais)
                 except ValueError:
@@ -31,6 +34,11 @@ def buscar_pais(paises, nombre):
 # Filtramos por continente:
 def filtrar_por_continente(paises, continente):
     return [pais for pais in paises if pais['continente'].lower() == continente.lower()]
+
+# Filtramos por clima:
+def filtrar_por_clima(paises, clima):
+    return [p for p in paises if p['clima'].lower() == clima.lower()]
+
 
 # Ordenamos por población o superficie:
 def ordenar_paises(paises, clave, descendente=True):
@@ -59,6 +67,7 @@ def mostrar_menu():
     print("3. Ordenar por población")
     print("4. Ordenar por superficie")
     print("5. Ver estadísticas generales")
+    print("7. Filtrar por clima")
     print("6. Salir")
 
 # Programa principal:
@@ -95,11 +104,25 @@ def main():
             print(f"📐 Superficie total: {stats['superficie_total']} km²")
             print(f"📊 Promedio de población: {int(stats['promedio_poblacion'])}")
             print(f"📊 Promedio de superficie: {int(stats['promedio_superficie'])} km²")
+               
+
         elif opcion == '6':
+            clima = input("Tipo de clima (Cálido, Frío, Templado, Tropical, Árido, Seco): ")
+            resultado = filtrar_por_clima(paises, clima)
+            if resultado:
+              print(f"{len(resultado)} países con clima {clima}:")
+              for p in resultado:
+                 print(f"🌎 {p['nombre']}")
+            else:
+             print("❌ No se encontraron países con ese clima.")
+
+        elif opcion == '7':
             print("👋 ¡Gracias por usar el sistema!")
             break
         else:
-            print("⚠️ Opción inválida. Intenta nuevamente.")
+          print("⚠️ Opción inválida. Intenta nuevamente.")
 
-if __name__ == "__main__":
+
+    if __name__ == "__main__":
+          main()
     main()
