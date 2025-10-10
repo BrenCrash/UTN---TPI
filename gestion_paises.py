@@ -67,8 +67,8 @@ def mostrar_menu():
     print("3. Ordenar por población")
     print("4. Ordenar por superficie")
     print("5. Ver estadísticas generales")
-    print("7. Filtrar por clima")
-    print("6. Salir")
+    print("6. Filtrar por clima")
+    print("7. Salir")
 
 # Programa principal:
 def main():
@@ -84,7 +84,7 @@ def main():
             resultado = buscar_pais(paises, nombre)
             print(resultado if resultado else "❌ País no encontrado.")
         elif opcion == '2':
-            continente = input("Nombre del continente: ")
+            continente = input("Nombre del continente(América,Asia,África,Europa,Oceanía): ")
             resultado = filtrar_por_continente(paises, continente)
             print(f"{len(resultado)} países encontrados.")
             for p in resultado:
@@ -123,6 +123,6 @@ def main():
           print("⚠️ Opción inválida. Intenta nuevamente.")
 
     
-    if __name__ == "__main__":
-        main()    
+if __name__ == "__main__":
+    main()    
 
