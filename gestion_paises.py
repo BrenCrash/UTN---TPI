@@ -42,7 +42,7 @@ def ordenar_paises(paises, clave, descendente=False):
 def filtrar_por_clima(paises, clima):
     return [p for p in paises if p['clima'].lower() == clima.lower()]
 
-# Filtrar por rango de población (inclusive). min_poblacion/max_poblacion pueden ser None
+# Filtramos por rango de población (inclusive). min_poblacion/max_poblacion pueden ser None
 def filtrar_por_poblacion(paises, min_poblacion=None, max_poblacion=None):
     resultado = []
     for p in paises:
@@ -51,7 +51,7 @@ def filtrar_por_poblacion(paises, min_poblacion=None, max_poblacion=None):
             resultado.append(p)
     return resultado
 
-# Filtrar por rango de superficie (inclusive)
+# Filtramos por rango de superficie (inclusive)
 def filtrar_por_superficie(paises, min_superficie=None, max_superficie=None):
     resultado = []
     for p in paises:
@@ -93,19 +93,75 @@ def leer_entero_opcional(prompt):
         print("⚠️ Valor inválido, por favor ingrese números enteros y reinicie el programa.")
         return None
 
+# Nueva funcionalidad requerida por consigna
+# Agregamos un nuevo país   
+def agregar_pais(paises):
+    print("\n Agregar un nuevo país:")
+    nombre = input("Nombre del país: ")
+    poblacion = leer_entero_opcional("Población: ")
+    superficie = leer_entero_opcional("Superficie (km²): ")
+    continente = input("Continente: ")
+    idioma = input("Idioma principal: ")
+    moneda = input("Moneda: ")
+    capital = input("Capital: ")
+    clima = input("Clima: ")
+
+    if poblacion is None or superficie is None:
+        print("⚠️ Datos numéricos inválidos. No se agregó el país.")
+        return
+
+    nuevo_pais = {
+        'nombre': nombre,
+        'poblacion': poblacion,
+        'superficie': superficie,
+        'continente': continente,
+        'idioma_principal': idioma,
+        'moneda': moneda,
+        'capital': capital,
+        'clima': clima
+    }
+    paises.append(nuevo_pais)
+    print(f"✅ País '{nombre}' agregado correctamente.")
+
+# Nueva funcionalidad requerida por consigna
+# Actualizamos la superficie y población de un país
+def actualizar_pais(paises):
+    print("\n Actualizar datos de un país:")
+    nombre = input("Nombre del país a actualizar: ")
+    encontrados = buscar_pais(paises, nombre)
+    if not encontrados:
+        print("❌ País no encontrado.")
+        return
+    if len(encontrados) > 1:
+        print("⚠️ Se encontraron varios países. Especificá mejor el nombre.")
+        return
+
+    pais = encontrados[0]
+    nueva_poblacion = leer_entero_opcional("Nueva población: ")
+    nueva_superficie = leer_entero_opcional("Nueva superficie (km²): ")
+
+    if nueva_poblacion is not None:
+        pais['poblacion'] = nueva_poblacion
+    if nueva_superficie is not None:
+        pais['superficie'] = nueva_superficie
+
+    print(f"✅ Datos actualizados para '{pais['nombre']}'.")
+
 # Mostramos el menú:
 def mostrar_menu():
     print("\n📊 Menú de Gestión de Países:")
-    print("1. Buscar país por nombre")
-    print("2. Filtrar por continente")
-    print("3. Ordenar por población")
-    print("4. Ordenar por superficie")
-    print("5. Ordenar por nombre")
-    print("6. Filtrar por clima")
-    print("7. Filtrar por rango de población")
-    print("8. Filtrar por rango de superficie")
-    print("9. Ver estadísticas generales y particulares")
-    print("10.Salir")
+    print(" 1. Buscar país por nombre")
+    print(" 2. Filtrar por continente")
+    print(" 3. Ordenar por población")
+    print(" 4. Ordenar por superficie")
+    print(" 5. Ordenar por nombre")
+    print(" 6. Filtrar por clima")
+    print(" 7. Filtrar por rango de población")
+    print(" 8. Filtrar por rango de superficie")
+    print(" 9. Ver estadísticas generales y particulares")
+    print("10. Agregar un país")  # Nueva funcionalidad requerida por consigna
+    print("11. Actualizar superficie y población de un país")  # Nueva funcionalidad requerida por consigna
+    print("12. Salir")
 
 # Programa principal:
 def main():
@@ -188,7 +244,11 @@ def main():
             print("📍 Cantidad de países por continente:")
             for cont, cnt in stats['cantidad_por_continente'].items():
                 print(f"- {cont}: {cnt}")
-        elif opcion == '10':
+        elif opcion == '10':    #nueva funcionalidad requerida por consigna
+            agregar_pais(paises)
+        elif opcion == '11':    #nueva funcionalidad requerida por consigna
+            actualizar_pais(paises)
+        elif opcion == '12':
             print("\n👋 ¡Gracias por usar el sistema!")
             break
         else:
