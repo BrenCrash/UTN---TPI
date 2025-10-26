@@ -17,6 +17,8 @@ Permite al usuario:
 
 🔹 Calcular estadísticas generales, como el total de países, población y superficie acumuladas, sus promedios. Y estadísticas particulares, como ser los países con mayor y menor población. Así como la cantidad de países por continente.
 
+🔹 Agregar países y también poder actualizar la superficie y población de los países de la lista.
+
 🔹 Interactuar mediante un menú, que guía al usuario por las distintas funcionalidades del programa de forma clara y amigable.
 
 🔧 **Instrucciones:**
@@ -48,3 +50,8 @@ Permite al usuario:
 🔹 Filtrar por rango de superficie → solicita ingresar valor mínimo y máximo de superficie para determinar el rango de búsqueda y muestra el listado de países comprendidos dentro de esa categoría.
 
 🔹 Ver estadísticas generales y particulares → muestra totales, promedios, los países más y menos poblados y la cantidad de países por continente.
+
+🔹 Agregar un nuevo país → agrega un nuevo país a la lista, luego de solicitarle al usuario: el nombre del nuevo país, la población, la superficie, el continente, el idioma principal, la moneda, la capital y el clima.
+
+🔹 Actualizar datos de un país → permite actualizar la población y la superficie de un país contenido en la lista de países.
+
